@@ -8,7 +8,7 @@ import Typewriter from "typewriter-effect";
 export default function Home() {
   return (
     <div id='home'>
-    <Container>
+    <Container className='wave'>
     <Row>
       <Col className='monisha'>HOLA! Myself Monisha.<br></br><Typewriter
         options={{

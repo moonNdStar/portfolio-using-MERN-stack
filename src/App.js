@@ -1,35 +1,44 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import About from "./components/About";
-import Services from "./components/Services";
+import Skills from "./components/Skills";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Home from "./components/Home";
+
 function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" id="nav-nav">
         <Container fluid>
-          <Navbar.Brand href="#">Monisha Nagpal</Navbar.Brand>
+          <Navbar.Brand href="#" className="mona-name" font-aria-setsize={400}>Monisha Nagpal</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className="me-auto my-2 my-lg-0"
+              className="justify-content-center flex-grow-1 pe-3 "
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <Nav.Link as={Link} to="/">
+              <Nav.Link className="Link1" as={Link} to="/" >
                 HOME
               </Nav.Link>
-              <Nav.Link as={Link} to="/about">
+              <Nav.Link className="Link2" as={Link} to="/about">
                 ABOUT
               </Nav.Link>
-              <Nav.Link as={Link} to="/service">
-                SERVICES
+              <Nav.Link className="Link3" as={Link} to="/skill">
+                SKILLS
+              </Nav.Link>
+              <Nav.Link className="Link4" as={Link} to="/project">
+                PROJECTS
+              </Nav.Link>
+              <Nav.Link className="Link4" as={Link} to="/experience">
+                EXPERIENCE
               </Nav.Link>
             </Nav>
             <Form className="d-flex">
@@ -41,7 +50,10 @@ function App() {
       <div>
       <Routes>
       <Route path="/about" element={<About/>}/>
-      <Route path="/service" element={<Services/>}/>
+      <Route path="/skill" element={<Skills/>}/>
+      <Route path="/project" element={<Projects/>}/>
+      <Route path="/experience" element={<Experience/>}/>
+
 <Route path="/" element={<Home/>}/>
       </Routes>
       </div>

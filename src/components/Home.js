@@ -7,13 +7,16 @@ import Typewriter from "typewriter-effect";
 
 export default function Home() {
   return (
+    
+    <div className='home'>
     <div id='home'>
     <Container className='wave'>
     <Row>
-      <Col className='monisha'>HOLA! Myself Monisha.<br></br><Typewriter
+      <Col className='monisha'><span className='hola'>HOLA!</span><span className='mona'> Myself Monisha.</span><br></br><Typewriter
         options={{
             loop: true,
         }}
+      
       onInit={(typewriter)=> {
        
       typewriter
@@ -33,10 +36,16 @@ export default function Home() {
       />
     </Col>
       <Col>
-      <img src={imageOfGirl} height="600px" className='justify-content-end'></img></Col>
+      <img src={imageOfGirl} height="550px" className='justify-content-end text-end'></img></Col>
     </Row>
-    
+    <br></br>
+    <br></br>
+    <br></br>
+
   </Container>
     </div>
+    
+    </div>
+    
   )
 }

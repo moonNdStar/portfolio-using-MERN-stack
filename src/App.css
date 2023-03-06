@@ -1,127 +1,32 @@
 /* Home */
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
-#home, #nav-nav{
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+
+
+#nav-nav{
     background-color: rgb(54, 9, 54) !important;
 }
 
+.home{
+  background-color: rgb(54,9,54) !important;
+  z-index: 2 !important;
+}
+
+.homee{
+  background-color: rgb(54,9,54) !important;
+}
+
 .monisha{
+  font-family: 'Lato', sans-serif;
     color: white;
     font-size: 40px;
     padding-top: 160px;
 }
 
-/* body {
-    background: #182028;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  } */
-  
-  .moving-text {
-    font-size: 8vmin;
-    color: #8bf;
-    text-align: left;
-    font-family: Lato, sans-serif;
-    font-weight: 700;
-    margin: 1rem 0 1rem 2rem;
-  }
-  
-  /* Typewriter effect 1 */
-  @keyframes typing {
-    0.0000%, 27.3488% { content: ""; }
-    1.1395%, 26.2093% { content: "c"; }
-    2.2791%, 25.0698% { content: "co"; }
-    3.4186%, 23.9302% { content: "com"; }
-    4.5581%, 22.7907% { content: "comp"; }
-    5.6977%, 21.6512% { content: "compe"; }
-    6.8372%, 20.5116% { content: "compet"; }
-    7.9767%, 19.3721% { content: "competi"; }
-    9.1163%, 18.2326% { content: "competit"; }
-    10.2558%, 17.0930% { content: "competiti"; }
-    11.3951%, 15.9535% { content: "competitiv"; }
-    12.5346%, 14.814% { content: "competitive"; }
-    13.6741%, 13.6745% { content: "competitive "; }
-    14.8136%, 12.535% { content: "competitive c"; }
-    15.9531%, 11.3955% { content: "competitive co"; }
-    17.0926%, 10.256% { content: "competitive cod"; }
-    18.2321%, 9.1165% { content: "competitive code"; }
-    19.3716%, 7.977% { content: "competitive coder"; }
 
-  
-    30.7674%, 51.2791% { content: ""; }
-    31.9070%, 50.1395% { content: "w"; }
-    33.0465%, 49.0000% { content: "wr"; }
-    34.1860%, 47.8605% { content: "wri"; }
-    35.3256%, 46.7209% { content: "writ"; }
-    36.4651%, 45.5814% { content: "write"; }
-    37.6047%, 44.4419% { content: "writer"; }
-  
-    54.6977%, 75.2093% { content: ""; }
-    55.8372%, 74.0698% { content: "r"; }
-    56.9767%, 72.9302% { content: "re"; }
-    58.1163%, 71.7907% { content: "rea"; }
-    59.2558%, 70.6512% { content: "read"; }
-    60.3953%, 69.5116% { content: "reade"; }
-    61.5349%, 68.3721% { content: "reader"; }
-  
-    78.6279%, 96.8605% { content: ""; }
-    79.7674%, 95.7209% { content: "h"; }
-    80.9070%, 94.5814% { content: "hu"; }
-    82.0465%, 93.4419% { content: "hum"; }
-    83.1860%, 92.3023% { content: "huma"; }
-    84.3256%, 91.1628% { content: "human"; }
-  }
-  
-  @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
-  
-  .typewriter {
-    --caret: currentcolor;
-  }
-  
-  .typewriter::before {
-    content: "";
-    animation: typing 13.5s infinite;
-  }
-  
-  .typewriter::after {
-    content: "";
-    border-right: 1px solid var(--caret);
-    animation: blink 0.5s linear infinite;
-  }
-  
-  .typewriter.thick::after {
-    border-right: 1ch solid var(--caret);
-  }
-  
-  .typewriter.nocaret::after {
-    border-right: 0;
-  }
-  
-  
-  @media (prefers-reduced-motion) {
-    .typewriter::after {
-      animation: none;
-    }
-    
-    @keyframes sequencePopup {
-      0%, 100% { content: "developer"; }
-      25% { content: "writer"; }
-      50% { content: "reader"; }
-      75% { content: "human"; }
-    }
-  
-    .typewriter::before {
-      content: "developer";
-      animation: sequencePopup 12s linear infinite;
-    }
-  }
-  
   /**/
   
   /* '
@@ -144,4 +49,55 @@
   }
 
  
-  
+  .socio-img{
+    padding-top: 20px;
+  }
+
+  .copy{
+    padding-top: 10px;
+  }
+  .home {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 90%, 0 100%);
+
+}
+
+.footer{
+  background-color: rgb(224, 192, 217);
+  margin-top: -110px;
+  z-index: 1;
+}
+
+.icon1, .icon2, .icon3, .icon4, .icon5{
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.hola{
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#ffffff, #a94949);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mona{
+  font-family: 'Lato', sans-serif;
+  font-size: 45px;
+  background: -webkit-linear-gradient(#ffffff, #a94949);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.copyright{font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+
+.love{
+  margin-top: -10px;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}

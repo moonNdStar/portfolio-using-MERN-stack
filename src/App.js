@@ -70,26 +70,69 @@ function App() {
             <Route path="/" element={<Home />} />
           </Routes>
         </div>
-
-        <Container fluid="md">
-          <Row>
-            <Col className="text-center">
-              <img src={github} height="30px"></img>
-              <img src={fb} height="30px"></img>
-              <img src={instagram} height="30px"></img>
-              <img src={linkedin} height="30px"></img>
-              <img src={twitter} height="30px"></img>
-            </Col>
-          </Row>
-          <Row>
-            <Col className="text-center">
-              <p>Copyright &#169; 2023 by Monisha</p>
-            </Col>
-          </Row>
-          <Row><Col className="text-center">
-          <p>Made With &#10084;&#65039;</p>
-        </Col></Row>
-        </Container>
+        <div className="footer">
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <Container fluid="md" className="footer">
+            <Row>
+              <Col className="text-center" id="socio-img">
+                <a
+                  href="https://github.com/moonNdStar/"
+                  target={"_blank"}
+                  className="icon1"
+                >
+                  {" "}
+                  <img src={github} height="30px"></img>
+                </a>
+                <a
+                  href="https://www.facebook.com/monisha.nagpal.3"
+                  target={"_blank"}
+                  className="icon2"
+                >
+                  <img src={fb} height="30px"></img>
+                </a>
+                <a
+                  href="https://www.instagram.com/mooonishaa/?hl=en"
+                  target={"_blank"}
+                  className="icon3"
+                >
+                  <img src={instagram} height="30px"></img>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/monisha-nagpal-832b351b4/"
+                  target={"_blank"}
+                  className="icon4"
+                >
+                  <img src={linkedin} height="30px"></img>
+                </a>
+                <a
+                  href="https://twitter.com/monisha_nagpal"
+                  target={"_blank"}
+                  className="icon5"
+                >
+                  <img src={twitter} height="30px"></img>
+                </a>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="text-center">
+                <p className="copyright">Copyright &#169; 2023 by Monisha</p>
+              </Col>
+            </Row>
+            <Row>
+              <Col className="text-center">
+                <p className="love">Made With &#10084;&#65039;</p>
+              </Col>
+            </Row>
+          </Container>
+        </div>
       </div>
     </BrowserRouter>
   );

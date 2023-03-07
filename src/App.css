@@ -15,10 +15,36 @@
   z-index: 2 !important;
 }
 
+.about-bg{
+  background-color: rgb(54,9,54) !important;
+  padding-bottom: 130px;
+  padding-top: 50px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 90%, 0 100%);
+}
+
 .homee{
   background-color: rgb(54,9,54) !important;
 }
+@media only screen and (max-width: 600px) {
+  .centering-mona {
+    text-align: center;
+  }
+}
 
+.hello-world{
+  font-family: 'Lato', sans-serif;
+  font-size: 45px;
+  background: -webkit-linear-gradient(#ffffff, #a94949);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-us{
+  color: #eddfe5 !important;
+  padding-top: 80px;
+  color: rgb(247, 214, 242) !important;
+  font-size: 20px;
+}
 .monisha{
   font-family: 'Lato', sans-serif;
     color: white;
@@ -26,7 +52,15 @@
     padding-top: 160px;
 }
 
-
+.centering-girl{
+  text-align: center;
+}
+.socio-img{
+  justify-content: center !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
   /**/
   
   /* '
@@ -42,12 +76,28 @@
     color: wheat !important;
   }
 
+  .mona-name{
+    padding-bottom: 40x !important;
+  }
   .Link1, .Link2, .Link3, .Link4{
-    font-size: 20px !important;
+    font-family: 'Lato', sans-serif;
+    font-size: large !important;
     padding-left: 26px !important;
     color: white !important;
+    
   }
 
+#about-me{
+  font-size: 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+    
+}
+
+.d-flex{
+  padding-left: 26px !important;
+}
  
   .socio-img{
     padding-top: 20px;
@@ -80,7 +130,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.skills-heading{
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  background: -webkit-linear-gradient(#ffffff, #a94949);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .mona{
   font-family: 'Lato', sans-serif;
   font-size: 45px;
@@ -100,4 +157,85 @@
   font-weight: 600;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
+}
+
+.resume{
+  outline: #ffffff !important;
+  border: #ffffff !important;
+  background-color: #94506f !important;
+}
+
+.resume:hover{
+  background-color: #eddfe5 !important;
+  color: black !important;
+}
+
+.containers{
+  width: 90%;
+  margin: 0 auto;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.bar{
+  background-color: #eeeeee;
+  padding: 2px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #212021;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #ffcc33;
+}
+.bar.back::before{
+  background-color: #a6cfe3;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
 }

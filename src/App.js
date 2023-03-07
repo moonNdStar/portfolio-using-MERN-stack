@@ -22,7 +22,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar bg="light" expand="lg" id="nav-nav">
+        <Navbar bg="dark" expand="lg" id="nav-nav" variant="dark">
           <Container fluid>
             <Navbar.Brand
               href="#"
@@ -32,11 +32,11 @@ function App() {
               Monisha Nagpal
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
+            <Navbar.Collapse id="responsive-navbar-nav">
               <Nav
                 className="justify-content-center flex-grow-1 pe-3 "
-                style={{ maxHeight: "100px" }}
-                navbarScroll
+                style={{ maxHeight: "300px" }}
+                
               >
                 <Nav.Link className="Link1" as={Link} to="/">
                   HOME

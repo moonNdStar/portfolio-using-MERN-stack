@@ -57,7 +57,7 @@ export default function Home() {
             <div className="centering-girl">
               <img
                 src={imageOfGirl}
-                width="80%"
+                width="100%"
                 className="justify-content-end text-end"
                 id="girl-image"
               ></img></div>

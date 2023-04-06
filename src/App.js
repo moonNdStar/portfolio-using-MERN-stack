@@ -70,7 +70,7 @@ function App() {
             <Route path="/" element={<Home />} />
           </Routes>
         </div>
-        <div className="footer">
+        <div className="footer" id="lol">
           <br></br>
           <br></br>
           <br></br>
@@ -79,6 +79,7 @@ function App() {
           <br></br>
           <br></br>
           <br></br>
+         
           <br></br>
           <Container fluid="md" className="footer">
             <Row>
@@ -131,6 +132,7 @@ function App() {
                 <p className="love">Made With &#10084;&#65039;</p>
               </Col>
             </Row>
+            
           </Container>
         </div>
       </div>
